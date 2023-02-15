@@ -11,12 +11,28 @@ router.post('/', (req, res) => {
     if (teamcode == 2744 && newWord == "terminator") {
         res.render('firstpage')
     } else if (teamcode == 2642 && newWord == "transformer") {
-        res.render('two')
-    } else {
+        res.render('secondpage')
+    } else if (teamcode == 8462 && newWord == "transformer") {
+        res.render('thirdpage')
+    } else if (teamcode == 7845 && newWord == "transformer") {
+        res.render('fourthpage')
+    }else if (teamcode == 5874 && newWord == "transformer") {
+        res.render('fourthpage')
+    }
+    else {
         res.render('404')
     }
 })
 router.get('/firstpage', (req,res) => {
     res.render('firstpage')
+});
+router.get('/secondpage', (req,res) => {
+    res.render('secondpage')
+});
+router.get('/thirdpage', (req,res) => {
+    res.render('thirdpage')
+});
+router.get('/fourthpage', (req,res) => {
+    res.render('fourthpage')
 });
 module.exports = router;
