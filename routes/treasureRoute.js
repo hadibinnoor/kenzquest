@@ -14,10 +14,6 @@ router.post('/', (req, res) => {
         res.render('secondpage')
     } else if (teamcode == 8462 && newWord == "transformer") {
         res.render('thirdpage')
-    } else if (teamcode == 7845 && newWord == "transformer") {
-        res.render('fourthpage')
-    }else if (teamcode == 5874 && newWord == "transformer") {
-        res.render('fourthpage')
     }
     else {
         res.render('404')
@@ -31,8 +27,5 @@ router.get('/secondpage', (req,res) => {
 });
 router.get('/thirdpage', (req,res) => {
     res.render('thirdpage')
-});
-router.get('/fourthpage', (req,res) => {
-    res.render('fourthpage')
 });
 module.exports = router;
