@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
         res.render('firstpage')
     } else if (teamcode == 2808 && newWord == "bandwidth") {
         res.render('secondpage')
-    } else if (teamcode == 0374 && newWord == "bandwidth") {
+    } else if (teamcode == 3741 && newWord == "bandwidth") {
         res.render('secondpage')
     } else if (teamcode == 4186 && newWord == "bandwidth") {
         res.render('thirdpage')
@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
         res.render('thirdpage')
     } else if (teamcode == 5394 && newWord == "bandwidth") {
         res.render('firstpage')
-    } else if (teamcode == 0862 && newWord == "bandwidth") {
+    } else if (teamcode == 8621 && newWord == "bandwidth") {
         res.render('secondpage')
     } else if (teamcode == 1435 && newWord == "bandwidth") {
         res.render('thirdpage')
